@@ -38,20 +38,20 @@ public class que {
 
                            } else {
 
-                                  System.out.println("Add Letters.  Hit Enter to Stop");
+                                  System.out.println("Add Letters. Type exit to stop");
 
                                   do{
 
                                          a = scan.next();
-
+                                         if (a.compareTo("exit")!=0) {
                                          alphabet.add(a);
-
-                                         }while (alphabet.size() < 10);
+                                         }
+                                         }while (alphabet.size() < 10  && a.compareTo("exit")!=0);
 
                                   System.out.println("Que is now Full.  Must remove a Letter to enter more.");
 
-                           }
-
+                                  }
+                           
                           
 
                      }
